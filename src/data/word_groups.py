@@ -1,0 +1,63 @@
+"""Word groups for Word Quartet puzzle game."""
+
+from typing import List, Tuple, Dict
+
+WordGroup = Tuple[List[str], str, str]
+
+WORD_GROUPS: List[WordGroup] = [
+    (["ACE", "KING", "QUEEN", "JACK"], "Playing Cards", "yellow"),
+    (["TWO", "THREE", "FOUR", "FIVE"], "Playing Cards", "yellow"),
+    (["SPADE", "HEART", "CLUB", "DIAMOND"], "Playing Card Suits", "green"),
+    (["DEAL", "SHUFFLE", "DRAW", "BET"], "Card Game Actions", "green"),
+    (["NOOK", "CRANNY", "HOLLOW", "COVE"], "Small Spaces", "blue"),
+    (["PEAK", "SUMMIT", "CLIFF", "PLATEAU"], "High Places", "blue"),
+    (["OAK", "pine", "MAPLE", "BIRCH"], "Tree Types", "purple"),
+    (["ROSE", "TULIP", "DAFFODIL", "LILY"], "Flower Types", "purple"),
+    (["BREAST", "BACK", "THIGH", "CALF"], "Body Parts", "yellow"),
+    (["HAND", "FOOT", "KNEE", "ELBOW"], "Body Parts", "yellow"),
+    (["SOLAR", "LUNAR", "PLANETARY", "STELLAR"], "Space Related", "green"),
+    (["OCEAN", "RIVER", "LAKE", "STREAM"], "Water Bodies", "green"),
+    (["RED", "BLUE", "GREEN", "YELLOW"], "Primary Colors", "blue"),
+    (["BLACK", "WHITE", "GRAY", "BROWN"], "Neutral Colors", "blue"),
+    (["DOCTOR", "NURSE", "SURGEON", "PARAMEDIC"], "Medical Roles", "purple"),
+    (["TEACHER", "PRINCIPAL", "COUNSELOR", "LIBRARIAN"], "School Roles", "purple"),
+    (["CITY", "TOWN", "VILLAGE", "HAMLET"], "Settlement Sizes", "yellow"),
+    (["COUNTRY", "STATE", "PROVINCE", "REGION"], "Administrative Divisions", "yellow"),
+    (["EARTH", "WATER", "FIRE", "AIR"], "Classical Elements", "green"),
+    (["PLANT", "ANIMAL", "FUNGI", "BACTERIA"], "Biological Kingdoms", "green"),
+    (["WINTER", "SPRING", "SUMMER", "FALL"], "Seasons", "blue"),
+    (["MORNING", "AFTERNOON", "EVENING", "NIGHT"], "Times of Day", "blue"),
+    (["HEART", "SOUL", "SPIRIT", "MIND"], "Non-Physical Essence", "purple"),
+    (["EYE", "EAR", "NOSE", "MOUTH"], "Facial Features", "purple"),
+    (["DOOR", "WINDOW", "WALL", "ROOF"], "House Parts", "yellow"),
+    (["BED", "TABLE", "CHAIR", "SOFA"], "Furniture", "yellow"),
+    (["PEN", "PENCIL", "MARKER", "CRAYON"], "Writing Tools", "green"),
+    (["BOOK", "PAGE", "CHAPTER", "INDEX"], "Book Parts", "green"),
+    (["SUN", "MOON", "STAR", "PLANET"], "Celestial Bodies", "blue"),
+    (["CLOUD", "RAIN", "SNOW", "HAIL"], "Precipitation Types", "blue"),
+    (["DOG", "CAT", "BIRD", "FISH"], "Common Pets", "purple"),
+    (["HORSE", "COW", "PIG", "SHEEP"], "Farm Animals", "purple"),
+    (["CAR", "BUS", "TRAIN", "PLANE"], "Vehicles", "yellow"),
+    (["SHIP", "BOAT", "CANOE", "RAFT"], "Watercraft", "yellow"),
+    (["RUN", "JUMP", "SWIM", "CLIMB"], "Physical Activities", "green"),
+    (["READ", "WRITE", "SPEAK", "LISTEN"], "Communication", "green"),
+    (["BEGIN", "MIDDLE", "END", "FINISH"], "Story Parts", "blue"),
+    (["START", "HALT", "CONTINUE", "STOP"], "Action States", "blue"),
+    (["HOT", "COLD", "WARM", "COOL"], "Temperature", "purple"),
+    (["WET", "DRY", "MOIST", "SOGGY"], "Moisture Levels", "purple"),
+    (["BIG", "HUGE", "TINY", "SMALL"], "Size Descriptors", "yellow"),
+    (["FAST", "SLOW", "QUICK", "RAPID"], "Speed Terms", "yellow"),
+    (["OLD", "NEW", "ANCIENT", "MODERN"], "Time Periods", "green"),
+    (["GOOD", "BAD", "RIGHT", "WRONG"], "Moral Qualities", "green"),
+    (["LOVE", "HATE", "LIKE", "DISLIKE"], "Emotions", "blue"),
+    (["HAPPY", "SAD", "ANGRY", "SCARED"], "Emotions", "blue"),
+    (["GOLD", "SILVER", "BRONZE", "COPPER"], "Metals", "purple"),
+    (["DIAMOND", "RUBY", "EMERALD", "SAPPHIRE"], "Gemstones", "purple"),
+]
+
+DIFFICULTY = {
+    "yellow": {"color": "yellow", "points": 1},
+    "green": {"color": "green", "points": 2},
+    "blue": {"color": "blue", "points": 3},
+    "purple": {"color": "purple", "points": 4},
+}
